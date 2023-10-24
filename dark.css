@@ -1,0 +1,24 @@
+.dark-mode {
+    background-color: rgba(0, 2, 5, 0.9);
+    color: #ffffff;
+}
+
+.dark-bio {
+    background-color: rgba(0, 2, 5, 0.8);
+    color: #ffffff;
+}
+
+/* .dark-mode-nav {
+    background-color: rgba(0, 2, 5, 0.9);
+    color: #ffffff;
+} */
+
+/* .dark-mode-checkbox-label {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.dark-mode-checkbox-ball {
+    background-color: #000;
+    color: #000;
+} */
