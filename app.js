@@ -6,12 +6,24 @@ const app = express();
 app.use('/',express.static(__dirname));
 
 app.get("/", (req, res) => {
-    return res.sendFile(__dirname + "/index.html");
+    return res.sendFile(__dirname + "/templates/index.html");
 });
+
+// app.get("/bio", (req, res) => {
+//   return res.sendFile(__dirname + "/templates/bio.html");
+// });
+
+// app.get("/projects", (req, res) => {
+//   return res.sendFile(__dirname + "/templates/projects.html");
+// });
+
+// app.get("/contact", (req, res) => {
+//   return res.sendFile(__dirname + "/templates/contact.html");
+// });
 
 // 404 handler
 app.use(function (req, res, next) {
-    return next(new ExpressError("Not Found", 404));
+    return res.sendFile(__dirname + "/templates/404.html");
 });
   
 // generic error handler
